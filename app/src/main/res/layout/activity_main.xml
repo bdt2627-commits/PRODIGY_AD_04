@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/player1Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Player 1 Name (X)"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/player2Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Player 2 Name (O)"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Enter names and start game!"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/button00"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button01"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button02"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button20"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button21"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button22"
+            style="@style/GameBoardButton"
+            android:onClick="onCellClicked"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="24dp"
+        android:onClick="resetGame"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
